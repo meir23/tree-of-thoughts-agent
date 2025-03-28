@@ -1,0 +1,23 @@
+# ToTA Agent Configuration
+
+# LLM Settings
+llm_model_identifier: "claude-3-sonnet-20240229"
+llm_api_key: ""  # Set via environment variable ANTHROPIC_API_KEY
+llm_api_base_url: "https://api.anthropic.com/v1"
+llm_retry_attempts: 3
+
+# Exploration Limits
+max_depth: 10
+max_breadth: 3
+max_nodes: 100
+max_llm_calls: 50
+max_time_limit_seconds: 600  # 10 minutes
+
+# File Paths
+generation_prompt_template: "prompts/generation_prompt.txt"
+decision_hub_prompt_template: "prompts/decision_hub_prompt.txt"
+log_file_path_template: "logs/tota_run_{timestamp}.md"
+
+# Function Names Mapping
+function_names:
+  log_node: "log_node_details"

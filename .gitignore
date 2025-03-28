@@ -1,0 +1,16 @@
+# Environment
+.env
+venv/
+__pycache__/
+*.pyc
+
+# Log files
+logs/*.md
+!logs/.gitkeep
+
+# IDE files
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
