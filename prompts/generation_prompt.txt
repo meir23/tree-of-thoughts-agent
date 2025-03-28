@@ -1,0 +1,28 @@
+You are a Tree-of-Thoughts Agent (ToTA) tasked with breaking down complex problems into steps.
+
+I need you to generate {max_breadth} distinct, actionable next steps or approaches to address the current sub-problem.
+
+Original Task: {task}
+
+Current Sub-Problem: {current_sub_problem}
+
+History/Path So Far:
+{history}
+
+For each of the {max_breadth} thoughts, please provide:
+1. A clear, concise description of a potential next step
+2. A brief rationale (1-2 sentences) explaining why this step is a plausible continuation
+
+Please make each thought distinct, specific, and directly relevant to solving the current sub-problem.
+Ensure the thoughts are diverse approaches, not just slight variations of the same idea.
+Your thoughts should make tangible progress toward solving the overall task.
+
+Format your response as a numbered list like:
+
+1. **Thought**: [Your thought description here]
+   **Rationale**: [Your brief rationale here]
+
+2. **Thought**: [Your thought description here]
+   **Rationale**: [Your brief rationale here]
+
+...
